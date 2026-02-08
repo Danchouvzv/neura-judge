@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { AuditReport, FirstProgram } from "../types";
 import { PROGRAM_RUBRICS } from "../constants";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || process.env.API_KEY });
 
 export async function analyzePortfolio(
   text: string, 
