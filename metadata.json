@@ -1,0 +1,5 @@
+{
+  "name": "FIRST Engineering Portfolio AI Judge",
+  "description": "An AI-powered auditor for FIRST robotics engineering portfolios. Upload your portfolio for an objective audit based on official rubrics, featuring scoring, gap analysis, and a 'water detector' for weak phrasing.",
+  "requestFramePermissions": []
+}
