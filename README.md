@@ -15,6 +15,26 @@ View your app in AI Studio: https://ai.studio/apps/drive/1USNccoCfTQkso4nqmYrMTi
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. Copy `.env.example` to `.env.local` and set your Gemini API key:
+   ```
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
 3. Run the app:
    `npm run dev`
+
+## Deploy
+
+When deploying to production (Vercel, Netlify, etc.), make sure to add the environment variable:
+- **Variable name:** `VITE_GEMINI_API_KEY`
+- **Value:** Your Gemini API key
+
+### Vercel
+1. Go to your project settings
+2. Navigate to Environment Variables
+3. Add `VITE_GEMINI_API_KEY` with your API key
+4. Redeploy
+
+### Netlify
+1. Go to Site settings → Environment variables
+2. Add `VITE_GEMINI_API_KEY` with your API key
+3. Redeploy
